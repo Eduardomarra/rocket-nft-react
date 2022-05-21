@@ -14,12 +14,20 @@ export default {
     font: {
         family: 'Montserrat, sans-serif',
         sizes: {
-            small: '1.6rem',
-            xsmall: '1.8rem',
-            medium: '2rem',
-            large: '3rem',
-            xlarge: '4rem',
-            huge: '5rem'
+            small: 'clamp(1.2rem, 2vw, 1.6rem)',
+            xsmall: 'clamp(1.4rem, 2vw, 1.8rem)',
+            medium: 'clamp(1.6rem, 2vw, 2rem)',
+            large: 'clamp(2rem, 2vw, 3rem)',
+            xlarge: 'clamp(2.5rem, 2vw, 4rem)',
+            huge: 'clamp(2rem, 4vw, 5rem)'
+        },
+        line: {
+            small: 'clamp(1.1rem, 2vw, 1.6rem)',
+            xsmall: 'clamp(1.6rem, 6vw, 2.2rem)',
+            medium: 'clamp(2rem, 2vw, 3.2rem)',
+            large: 'clamp(2.4rem, 2vw, 4rem)',
+            xlarge: 'clamp(2.8rem, 4vw, 4.8rem)',
+            huge: 'clamp(3.2rem, 4vw, 6.4rem)'
         }
     },
     spacings: {

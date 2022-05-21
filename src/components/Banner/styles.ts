@@ -22,6 +22,10 @@ export const Asside = styled.div`
         max-width: 28rem;
         padding: 4rem 3rem;
         border-right: 1px solid ${theme.colors.subtitleColor};
+
+        @media screen and (max-width: 768px) {
+            padding: 0rem;
+        }
     `}
 `
 export const WrapperAsside = styled.div`
@@ -39,15 +43,22 @@ export const WrapperAsside = styled.div`
         h1 {
             font-weight: 600;
             font-size: ${theme.font.sizes.huge};
-            line-height: 6.1rem;
+            line-height: ${theme.font.line.huge};
             color: ${theme.colors.textColor};
         }
 
         span {
             font-weight: 600;
             font-size: ${theme.font.sizes.medium};
-            line-height: 2.4rem;
+            line-height: ${theme.font.line.medium};
             color: ${theme.colors.subtitleColor};
+        }
+        @media screen and (max-width: 500px) {
+            padding: 0 1rem;
+
+            & + div {
+                margin-top: 3rem;
+            }
         }
     `}
 `
@@ -56,6 +67,10 @@ export const BannerArtists = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 export const DescriptionBanner = styled.div`
     display: flex;
@@ -63,6 +78,15 @@ export const DescriptionBanner = styled.div`
     justify-content: space-around;
     gap: 10rem;
     padding: 8rem 6rem;
+
+    @media screen and (max-width: 768px) {
+        gap: 5rem;
+        padding: 5rem 3rem;
+    }
+    @media screen and (max-width: 500px) {
+        gap: 0rem;
+        padding: 2rem 1rem;
+    }
 `
 export const WrapperDescription = styled.div`
     ${({ theme }) => css`
@@ -85,6 +109,17 @@ export const WrapperDescription = styled.div`
         span {
             color: ${theme.colors.colorLogo};
         }
+
+        @media screen and (max-width: 768px) {
+            .description {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            p {
+                margin-bottom: ${theme.spacings.small};
+            }
+        }
     `}
 `
 export const ImageBanner = styled.div`
@@ -94,5 +129,12 @@ export const ImageBanner = styled.div`
     img {
         width: 100%;
         height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 20rem;
+    }
+    @media screen and (max-width: 500px) {
+        height: 10rem;
     }
 `

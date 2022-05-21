@@ -16,6 +16,12 @@ export const Container = styled.div`
         justify-content: space-between;
         flex-direction: column;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+            padding: 0 0.8rem;
+        }
+        @media screen and (max-width: 500px) {
+        }
     `}
 `
 export const WrapperLogo = styled.div`
@@ -29,7 +35,7 @@ export const WrapperLogo = styled.div`
         h1 {
             font-weight: 700;
             font-size: ${theme.font.sizes.xlarge};
-            line-height: 4.9rem;
+            line-height: ${theme.font.line.xlarge};
             color: ${theme.colors.textColor};
 
             span {
@@ -50,6 +56,24 @@ export const WrapperLogo = styled.div`
                 }
             }
         }
+
+        @media screen and (max-width: 768px) {
+            padding: 4rem 0;
+            button {
+                width: 4rem;
+                height: 4rem;
+
+                a {
+                    & svg {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 500px) {
+            padding: 2rem 0;
+        }
     `}
 `
 export const WrapperNav = styled.div`
@@ -57,6 +81,17 @@ export const WrapperNav = styled.div`
     display: grid;
     grid-template-columns: 55rem 1fr;
     padding: 6rem 0;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 3rem 0;
+    }
 `
 export const Form = styled.div`
     ${({ theme }) => css`
@@ -83,6 +118,15 @@ export const Form = styled.div`
                 color: ${theme.colors.colorLogo};
             }
         }
+
+        @media screen and (max-width: 768px) {
+            & ::after {
+                display: none;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
     `}
 `
 export const WrapperInput = styled.div`
@@ -95,7 +139,7 @@ export const WrapperInput = styled.div`
             background: ${theme.colors.colorInput};
             font-weight: 400;
             font-size: ${theme.font.sizes.medium};
-            line-height: 2.4rem;
+            line-height: ${theme.font.line.medium};
             color: ${theme.colors.subtitleColor};
             border: none;
             padding: 0 1rem;
@@ -105,7 +149,7 @@ export const WrapperInput = styled.div`
                 font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: ${theme.font.sizes.medium};
-                line-height: 2.4rem;
+                line-height: ${theme.font.line.medium};
                 color: ${theme.colors.subtitleColor};
             }
             & :focus {
@@ -118,10 +162,33 @@ export const WrapperInput = styled.div`
             height: 6rem;
             font-weight: 700;
             font-size: ${theme.font.sizes.medium};
-            line-height: 2.4rem;
+            line-height: ${theme.font.line.medium};
             color: ${theme.colors.blackText};
             background: ${theme.colors.textColor};
             border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            input {
+                height: 6rem;
+                min-width: 10rem;
+            }
+
+            button {
+                width: 8rem;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            input {
+                height: 4rem;
+                width: 10rem;
+                min-width: 15rem;
+                padding: 0 1rem;
+            }
+            button {
+                width: 7rem;
+                height: 4rem;
+            }
         }
     `}
 `
@@ -129,6 +196,10 @@ export const Nav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+    }
 `
 export const WrapperNavLinks = styled.div`
     ${({ theme }) => css`
@@ -149,6 +220,11 @@ export const WrapperNavLinks = styled.div`
                 color: ${theme.colors.subtitleColor};
             }
         }
+        @media screen and (max-width: 768px) {
+            & + div {
+                margin-left: 1rem;
+            }
+        }
     `}
 `
 export const WrapperFooter = styled.div`
@@ -156,6 +232,7 @@ export const WrapperFooter = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         padding: 6rem 0;
 
@@ -164,6 +241,12 @@ export const WrapperFooter = styled.div`
             font-size: ${theme.font.sizes.medium};
             line-height: 2.4rem;
             color: ${theme.colors.subtitleColor};
+        }
+        @media screen and (max-width: 768px) {
+            padding: 4rem 0;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 2rem 0;
         }
     `}
 `
@@ -188,6 +271,10 @@ export const WrapperIcons = styled.div`
                 height: 3rem;
                 transition: all 0.3s ease;
             }
+        }
+
+        @media screen and (max-width: 768px) {
+            gap: 1rem;
         }
     `}
 `

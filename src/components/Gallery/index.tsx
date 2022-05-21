@@ -9,23 +9,39 @@ import gallery6 from '../../assets/galeria-6.png'
 import gallery7 from '../../assets/galeria-7.png'
 import gallery8 from '../../assets/galeria-8.png'
 
-import { Container, Row } from './styles'
+import { Container, Row, WrapperImage } from './styles'
 
 export function Gallery() {
     return (
         <>
             <Container>
                 <Row>
-                    <img src={gallery1} alt="" />
-                    <img src={gallery2} alt="" />
-                    <img src={gallery3} alt="" />
-                    <img src={gallery4} alt="" />
+                    <WrapperImage>
+                        <img src={gallery1} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery2} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery3} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery4} alt="" />
+                    </WrapperImage>
                 </Row>
-                <Row>
-                    <img src={gallery5} alt="" />
-                    <img src={gallery6} alt="" />
-                    <img src={gallery7} alt="" />
-                    <img src={gallery8} alt="" />
+                <Row className="gallery-two">
+                    <WrapperImage>
+                        <img src={gallery5} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery6} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery7} alt="" />
+                    </WrapperImage>
+                    <WrapperImage>
+                        <img src={gallery8} alt="" />
+                    </WrapperImage>
                 </Row>
             </Container>
         </>

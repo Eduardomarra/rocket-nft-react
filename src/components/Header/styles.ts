@@ -8,7 +8,12 @@ export const Container = styled.div`
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: ${theme.spacings.medium} 0;
+        padding: ${theme.spacings.medium} 0.8rem;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            padding: ${theme.spacings.xsmall} 0.8rem;
+        }
     `}
 `
 export const Logo = styled.div`
@@ -56,6 +61,9 @@ export const Button = styled.button`
         padding: 0 2rem;
         border-radius: 2px;
         transition: all 0.3s ease;
+        @media screen and (max-width: 700px) {
+            margin-top: ${theme.spacings.xsmall};
+        }
 
         &:hover {
             filter: brightness(0.8);

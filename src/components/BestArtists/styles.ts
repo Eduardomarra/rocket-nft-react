@@ -22,6 +22,13 @@ export const Title = styled.h1`
         span {
             color: ${theme.colors.colorLogo};
         }
+
+        @media screen and (max-width: 768px) {
+            padding: 5rem 0 4rem 0;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 3rem 0 2rem 0;
+        }
     `}
 `
 export const WrapperArtists = styled.div`
@@ -31,6 +38,14 @@ export const WrapperArtists = styled.div`
     flex-wrap: wrap;
     gap: 11rem;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+        gap: 3rem;
+        justify-content: center;
+    }
+    @media screen and (max-width: 500px) {
+        gap: 1rem;
+    }
 `
 
 type CardProps = {
@@ -60,6 +75,13 @@ export const Artist = styled.div<CardProps>`
         img {
             width: 10rem;
             height: 10rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 2rem 2.5rem;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 1.5rem 2rem;
         }
     `}
 `
@@ -99,6 +121,13 @@ export const SubTitulo = styled.div`
             margin-left: 2rem;
             width: 3rem;
             height: 3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: 2rem 0 5rem 0;
+        }
+        @media screen and (max-width: 500px) {
+            margin: 2rem 0 3rem 0;
         }
     `}
 `

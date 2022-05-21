@@ -46,7 +46,7 @@ export function Banner() {
                                 <a href="#">Lorem Ipsun</a>
                             </WrapperDescription>
                             <WrapperDescription>
-                                <p>
+                                <p className="description">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Congue malesuada amet
                                     pretium lacus. Id <span>potenti diam</span>{' '}
@@ -54,7 +54,9 @@ export function Banner() {
                                     sit. Enim ultricies mauris mattis nunc
                                     semper.
                                 </p>
-                                <a href="#">Lorem Ipsun</a>
+                                <a className="description" href="#">
+                                    Lorem Ipsun
+                                </a>
                             </WrapperDescription>
                         </DescriptionBanner>
                         <ImageBanner>

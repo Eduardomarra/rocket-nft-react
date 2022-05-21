@@ -8,5 +8,9 @@ export const Container = styled.div`
         transform: translateX(-50%);
         max-width: ${theme.grid.container};
         margin: 0 auto;
+
+        @media screen and (max-width: 500px) {
+            width: 300px;
+        }
     `}
 `
