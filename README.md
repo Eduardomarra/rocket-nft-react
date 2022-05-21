@@ -14,7 +14,7 @@
 
 ---
 
-<a href="https://nft-marketplace-emarra.vercel.app/" target="_blank">Versão online</a>
+<a href="https://nft-marketplace-emarra.vercel.app/" target="__blank">Versão online</a>
 
 Layout retirado do desafio Discover da  [RocketSeat](https://https://www.rocketseat.com.br/).
 
