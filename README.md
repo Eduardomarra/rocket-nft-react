@@ -6,7 +6,7 @@
     height="auto"
     alt="Homepage do projeto"
     title="Home do blog"
-    src="./public/rocket-nft.png"
+    src="./public/rocket-nft.PNG"
   />
 </div>
 
